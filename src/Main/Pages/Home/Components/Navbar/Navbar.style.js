@@ -53,9 +53,9 @@ export const NavbarLink = styled(Link)`
   font-size: x-large;
   font-family: Arial, Halvetica, sans-serif;
   text-decoration: none;
-  margin: 10px;
   white-space: nowrap;
   overflow: hidden;
+  font-weight: 800;
 
   &:hover {
     background-color: transparent;
@@ -73,6 +73,7 @@ export const NavbarLinkExtended = styled(Link)`
   font-size: x-large;
   font-family: Arial, Halvetica, sans-serif;
   text-decoration: none;
+
   margin: 10px;
 
   &:hover {
@@ -101,10 +102,14 @@ export const StyledLogo = styled.svg`
 `;
 export const NavbarButton = styled.div`
   height: 100px;
-  margin-top: 6%;
-  @media (max-width: 700px) {
+  margin-top:28px;
+  margin-right: 25%;
+  @media (max-width: 900px) {
     display: none;
   }
+  @media (max-width: 1620px) {
+margin-top:10px;  }
+  
 `;
 
 export const NavbarButtonExtended = styled.button`

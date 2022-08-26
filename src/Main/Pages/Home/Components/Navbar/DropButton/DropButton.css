@@ -1,11 +1,13 @@
 .dropbtn {
     background-color: transparent;
     color: white;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     border: none;
     cursor: pointer;
     font-size: x-large;
     font-family: Arial, Halvetica, sans-serif;
+    font-weight: 900;
 }
 
 .dropbtn:hover {
@@ -30,6 +32,8 @@
     min-width: 120px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
+    font-size: large;
+
 }
 
 .dropdown-content a {
