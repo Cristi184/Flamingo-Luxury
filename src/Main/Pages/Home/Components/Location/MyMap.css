@@ -1,0 +1,6 @@
+.map {
+    height: 500px;
+
+@media (max-width: 900px) {
+    height:  150px;  }
+}
