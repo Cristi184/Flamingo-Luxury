@@ -9,10 +9,12 @@ export const StoryPrincipalDiv = styled.div`
   height: 100%;
   padding-top: 5rem;
   padding-bottom: 5rem;
-
+  @media (max-width: 425px) {
+  padding: 0;
+  }
 `
 export const StorySecundarBottomDiv = styled.div`
-  width: 60%;
+  width: 80%;
   height: 20%;
   margin: 0 auto;
   display: flex;
@@ -28,7 +30,7 @@ export const StorySecundarBottomDiv = styled.div`
 
 
 export const StorySecundaDiv = styled.div`
-  width: 60%;
+  width: 80%;
   height: 50%;
   margin: 0 auto;
   display: flex;
