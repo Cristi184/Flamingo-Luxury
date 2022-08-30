@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const ContainerMyMap = styled.div`
-height: 850px;
   padding-left: 15%;
   padding-right: 15%;
   background-color: #d5a076;
-  
+  @media (min-width: 900px) {
+    height: 850px;
+  }
   @media (max-width: 900px) {
-    height: 1000px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 `
 
@@ -21,6 +23,8 @@ padding-top: 5%;
 
   @media (max-width: 900px) {
     margin-bottom: 50px !important;
+    text-align: left;
+
   }
   
   
@@ -32,5 +36,6 @@ export const SubHeaderText = styled.h2`
 `
 
 export const ParagraphText = styled.p`
-  font-size: 25px;
+  color:#584e3f;
+  font-size: 20px;
 `

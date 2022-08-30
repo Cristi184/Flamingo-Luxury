@@ -20,11 +20,11 @@ const Story = () => {
                 <StorySecundaDiv>
                     <StoryTextDiv>
                         <StoryTextSecundarDiv>
-                        <h1>POVESTEA WIN HERĂSTRĂU</h1>
+                        <h1>POVESTEA FLAMINGO</h1>
                         <p>În conceptul propus de noi, luxul este exprimat prin armonie. În toată activitatea
                             desfășurată – de la formarea echipei, la alegerea proiectelor, la relațiile cu clienții – am
                             căutat armonia, descoperind mereu noi fațete ale ei.
-                            WIN Herăstrău este un “proiect de maturitate” – la nivel profesional și de aspirație.</p>
+                            Flamingo este un “proiect de maturitate” – la nivel profesional și de aspirație.</p>
                         </StoryTextSecundarDiv>
                     </StoryTextDiv>
                     <StoryPicturePrincipalDiv>
