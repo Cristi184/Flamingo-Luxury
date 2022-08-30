@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const TextContainer =styled.div`
+margin-top: 40px;
+`
+
 export const ContainerMyMap = styled.div`
   padding-left: 15%;
   padding-right: 15%;
@@ -16,7 +20,7 @@ export const ContainerMyMap = styled.div`
 export const HeaderTextMyMap = styled.h1`
   text-align: center;
 padding-top: 5%;
-  margin-bottom: 125px;
+  margin-bottom: 80px;
   color:#584e3f;
   text-transform: uppercase;
 
@@ -36,6 +40,6 @@ export const SubHeaderText = styled.h2`
 `
 
 export const ParagraphText = styled.p`
-  color:#584e3f;
+  color:white;
   font-size: 20px;
 `

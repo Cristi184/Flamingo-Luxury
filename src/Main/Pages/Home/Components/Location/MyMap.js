@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {MapContainer as LeafletMap, TileLayer, Marker, Popup} from "react-leaflet"
 import L from 'leaflet'
 import {Grid} from "@mui/material";
-import {ContainerMyMap, HeaderTextMyMap, ParagraphText, SubHeaderText} from "./MyMap.style";
+import {ContainerMyMap, HeaderTextMyMap, ParagraphText, SubHeaderText, TextContainer} from "./MyMap.style";
 import './MyMap.css'
 
 function GetIcon(_iconSize) {
@@ -19,18 +19,17 @@ const Location = () => {
     return (<ContainerMyMap >
             <HeaderTextMyMap>VREI SĂ DESCOPERI adipisicing elit?
             </HeaderTextMyMap>
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
                 <Grid item xs={12} md={4}>
-                    <div>
-                        <SubHeaderText>
-                        LOCAȚIA PROIECTULUI</SubHeaderText>
-                        <ParagraphText>Contactează-ne la adresa de email de mai jos pentru a afla mai multe despre noi și XXXXXX.</ParagraphText>
+                    <TextContainer>
+                        <ParagraphText>Contactează-ne la adresa de email de mai jos pentru a afla mai multe despre noi.</ParagraphText>
                         <ParagraphText>Email: email@email.com</ParagraphText>
                         <ParagraphText>Numar de telefon: 075765649</ParagraphText>
-
-                    </div>
+                    </TextContainer>
                 </Grid>
                 <Grid item xs={12} md={8} style = {{height: 500}}>
+                    <SubHeaderText>
+                        LOCAȚIA PROIECTULUI</SubHeaderText>
                     <LeafletMap className="map"
                                 center={position}
                                 zoom={18}
