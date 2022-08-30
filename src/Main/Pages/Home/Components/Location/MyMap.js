@@ -34,7 +34,7 @@ const Location = () => {
                     <LeafletMap className="map"
                                 center={position}
                                 zoom={18}
-                                style={{ height: 500, width: "100%", zIndex:"1"
+                                style={{  width: "100%", zIndex:"1"
                                 }}
                     >
                         <TileLayer
