@@ -1,27 +1,28 @@
 .dropbtn {
     background-color: transparent;
     color: white;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
     border: none;
     cursor: pointer;
     font-size: x-large;
-    font-family: Arial, Halvetica, sans-serif;
-    font-weight: 900;
+    font-family: Montserrat, Montserrat, sans-serif;
+    font-weight: 500;
+    padding-top: 0px;
 }
 
 .dropbtn:hover {
     color: #a3674a;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .dropbtn {
         display: none;
     }
 }
 
 .dropdown {
-    position: relative;
+    position: sticky;
     display: inline-block;
 }
 
@@ -33,6 +34,7 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     font-size: large;
+    margin-left: 30px;
 
 }
 

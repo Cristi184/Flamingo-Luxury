@@ -31,9 +31,13 @@ const Navbar = ({handleFormScroll, handleOpenForm, pathname}) => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+
     const handleClick = () => {
         if (pathname === "/") {
-            handleFormScroll();
+             handleFormScroll();
+            setTimeout(() => {
+                toggleExtendedBar()
+            }, 1000);
         } else {
             setExtendNavbar(false);
             handleOpenForm();
@@ -45,7 +49,7 @@ const Navbar = ({handleFormScroll, handleOpenForm, pathname}) => {
         <NavbarContainer extendNavbar={extendNavbar} heightScroll={offset}>
             <NavbarInnerContainer>
                 <LeftContainer>
-                    <Logo></Logo>
+                    <Logo/>
                 </LeftContainer>
                 <CenterContainer>
                     <NavbarLinkContainer>
@@ -64,7 +68,7 @@ const Navbar = ({handleFormScroll, handleOpenForm, pathname}) => {
                             onClick={handleClick}
                             sx={{
                                 ":hover": {
-                                    bgcolor: "#b8a87f",
+                                    // bgcolor: "rgb(213, 160, 118)",
                                     color: "white",
                                 },
                                 "&.Mui-disabled": {
@@ -74,7 +78,7 @@ const Navbar = ({handleFormScroll, handleOpenForm, pathname}) => {
                             color="gold"
                             variant="contained"
                         >
-                            Programeaza o intalnire
+                            Programează o intalnire
                         </Button>
                     </NavbarButton>
                     <OpenLinksButton onClick={toggleExtendedBar}>
@@ -95,18 +99,18 @@ const Navbar = ({handleFormScroll, handleOpenForm, pathname}) => {
                         onClick={handleClick}
                         sx={{
                             ":hover": {
-                                bgcolor: "#b8a87f",
+                                bgcolor: "rgb(213, 160, 118)",
                                 color: "white",
                             },
                             "&.Mui-disabled": {
                                 color: "white",
-                                background: "#a3674a",
+                                background: "rgb(213, 160, 118)",
                             },
                         }}
                         color="gold"
                         variant="contained"
                     >
-                        Programeaza o intalnire
+                        Programează o intalnire
                     </Button>
                 </NavbarExtendedContainer>
             ) : (
