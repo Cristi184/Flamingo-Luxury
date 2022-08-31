@@ -96,7 +96,7 @@ export const StoryParagraph = styled.p`
   &:after {
     display: block;
     content: '';
-    border-bottom: solid 10px #c0a227;
+    border-bottom: solid 10px #d5a076;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
     transform-origin: 100% 50%;

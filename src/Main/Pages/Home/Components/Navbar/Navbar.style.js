@@ -13,7 +13,7 @@ export const NavbarContainer = styled.nav`
   padding: 10px;
   opacity: ${(props) => (props.heightScroll === 0 ? 1 : 0.9)};
 
-  @media (min-width: 700px) {
+  @media (min-width: 770px) {
     height: 100px;
   }
 `;
@@ -51,18 +51,18 @@ export const NavbarLinkContainer = styled.div`
 export const NavbarLink = styled(Link)`
   color: white;
   font-size: x-large;
-  font-family: Arial, Halvetica, sans-serif;
+  font-family: Montserrat, Montserrat, sans-serif;
   text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
-  font-weight: 800;
+  font-weight: 500;
 
   &:hover {
     background-color: transparent;
     color: #a3674a;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -108,8 +108,7 @@ export const NavbarButton = styled.div`
     display: none;
   }
   @media (max-width: 1620px) {
-margin-top:10px;  }
-  
+  margin-top:10px;  }
 `;
 
 export const NavbarButtonExtended = styled.button`
@@ -133,7 +132,7 @@ export const OpenLinksButton = styled.button`
   cursor: pointer;
   padding-top: 15px;
 
-  @media (min-width: 700px) {
+  @media (min-width: 770px) {
     display: none;
   }
 `;
@@ -144,7 +143,7 @@ export const NavbarExtendedContainer = styled.div`
   align-items: center;
   background: black;
 
-  @media (min-width: 700px) {
+  @media (min-width: 770px) {
     display: none;
   }
 `;
