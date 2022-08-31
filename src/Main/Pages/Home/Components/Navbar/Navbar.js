@@ -56,10 +56,10 @@ const Navbar = ({handleFormScroll, handleOpenForm, pathname}) => {
                         <NavbarLink to="/">Acasă</NavbarLink>
                         <DropButton
                             title="Flamingo"
-                            list={["Concept", "Proiectare", "Facilitati"]}
+                            list={["Concept", "Proiectare", "Facilităti"]}
                         />
                         <NavbarLink to="/Galerie">Galerie</NavbarLink>
-                        <DropButton title="Echipa" list={["FigranSRL", "Parteneri"]}/>
+                        <DropButton title="Echipă" list={["FigranSRL", "Parteneri"]}/>
                     </NavbarLinkContainer>
                 </CenterContainer>
                 <RightContainer>
@@ -78,7 +78,7 @@ const Navbar = ({handleFormScroll, handleOpenForm, pathname}) => {
                             color="gold"
                             variant="contained"
                         >
-                            Programează o intalnire
+                            Programează o întâlnire
                         </Button>
                     </NavbarButton>
                     <OpenLinksButton onClick={toggleExtendedBar}>
@@ -110,7 +110,7 @@ const Navbar = ({handleFormScroll, handleOpenForm, pathname}) => {
                         color="gold"
                         variant="contained"
                     >
-                        Programează o intalnire
+                        Programează o întâlnire
                     </Button>
                 </NavbarExtendedContainer>
             ) : (

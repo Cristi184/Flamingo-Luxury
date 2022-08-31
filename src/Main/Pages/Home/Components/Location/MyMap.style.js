@@ -5,8 +5,8 @@ margin-top: 40px;
 `
 
 export const ContainerMyMap = styled.div`
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
   background-color: #d5a076;
   @media (min-width: 900px) {
     height: 850px;
