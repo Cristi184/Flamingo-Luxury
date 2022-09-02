@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const ParentContainerConcept = styled.div`
-  margin-top: 100px;
+  padding-top: 100px;
   height: 100%;
   width: 100%;
 `
