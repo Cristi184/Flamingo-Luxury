@@ -19,7 +19,7 @@ export const ContainerMyMap = styled.div`
 
 export const HeaderTextMyMap = styled.h1`
   text-align: center;
-padding-top: 5%;
+  padding-top: 5%;
   margin-bottom: 80px;
   color:#584e3f;
   text-transform: uppercase;
@@ -42,4 +42,8 @@ export const SubHeaderText = styled.h2`
 export const ParagraphText = styled.p`
   color:white;
   font-size: 20px;
+`
+
+export const SpanText = styled.span`
+color:rgb(88, 78, 63);
 `
