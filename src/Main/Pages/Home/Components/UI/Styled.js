@@ -71,6 +71,32 @@ export const StyledResponsiveContainer = styled.div`
 
   }
 `;
+
+export const StyledResponsiveView = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+
+  @media (max-width: 768px) {
+ width:100%;
+    flex-direction: ${({direction}) => direction || "column"};
+
+  }
+`;
+export const StyledImageWrapper = styled.div`
+
+  img{
+    width:500px;
+    
+  }
+  @media (max-width: 768px) {
+  img{width:100vw;} 
+  
+
+  }
+`;
+
 export const StyledTextField = styled(TextField)`
 
   .MuiOutlinedInput-notchedOutline {
@@ -226,6 +252,7 @@ export const StyledLayout = styled.div`
   padding: 100px 10px 0;
   justify-content: center;
   flex-direction: ${({direction}) => direction};
+  height: calc( 100vh - 100px);
   @media (max-width: 768px) {
     padding: 100px 0 0 ;
 `

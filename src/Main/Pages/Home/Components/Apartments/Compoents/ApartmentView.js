@@ -5,7 +5,7 @@ import {
     StyledFooterTitle,
     StyledLabel,
     StyledLayout,
-    StyledParagraph,
+    StyledParagraph, StyledResponsiveView,
     StyledTitle
 } from "../../UI/Styled";
 import {useLocation, useNavigate} from "react-router-dom";
@@ -88,14 +88,14 @@ const ApartmentView = () => {
                 title={<StyledFooterTitle>Apartament Tip {apartment}</StyledFooterTitle>}
 
             >
-                <StyledFlexContainer gap="20px" align="flex-start">
-                    <StyledFlexContainer width="50%">
+                <StyledFlexContainer gap="20px" align="flex-start" >
+                    <StyledResponsiveView>
                         <StyledCard
                             size="small"
                             border="none"
                             title={<StyledTitle>Suprafața totlă: {selected[0]?.totalArea}</StyledTitle>}
                         >
-                            <StyledFlexContainer direction="column" justify="flex-start" align="flex-start" width="50%">
+                            <StyledFlexContainer direction="column" justify="flex-start" align="flex-start" >
                                 <StyledFlexContainer justify="flex-start">
                                     <StyledLabel>Living </StyledLabel>
                                     <StyledParagraph> {": " + selected[0]?.livingArea}</StyledParagraph>
@@ -130,10 +130,11 @@ const ApartmentView = () => {
 
                         </StyledCard>
 
-                    </StyledFlexContainer>
-                    <StyledFlexContainer width="50%" heigth="100%">
-                        <StyledCard hoverable border="none"><MediaGallery/></StyledCard>
-                    </StyledFlexContainer>
+                            <MediaGallery/>
+
+                    </StyledResponsiveView>
+
+
                 </StyledFlexContainer>
             </StyledCard>
 
