@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "./image/background.png"
+import background from "./image/background.jpg"
 
 export const TextContainer = styled.div`
   margin-top: 40px;
