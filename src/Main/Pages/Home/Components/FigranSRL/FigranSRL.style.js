@@ -28,5 +28,7 @@ export const ParagraphConcept = styled.p`
   text-indent: 50px;
   font-size: 110%;
   text-align: justify;
+  letter-spacing:0.6px;
+  font-size: 1rem;
   
 `

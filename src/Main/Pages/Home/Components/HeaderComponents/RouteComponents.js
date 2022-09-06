@@ -1,15 +1,23 @@
-import {HaderContainerConcept, ParagraphHeader, ParentContainerConcept, TitleHeader} from "./RouteComponents.style";
+import {
+    ContainerImage,
+    HaderContainerConcept,
+    ParagraphHeader,
+    ParentContainerConcept, TitleH1,
+    TitleHeader
+} from "./RouteComponents.style";
 
 
 const RouteComponents = (props) => {
     return (
         <ParentContainerConcept>
-            <HaderContainerConcept imgUrl={props.background}>
-                <div>
-                    <TitleHeader>{props.title} </TitleHeader>
-                    <ParagraphHeader>Flamingo > {props.title}</ParagraphHeader>
-                </div>
-            </HaderContainerConcept>
+            <ContainerImage>
+                <HaderContainerConcept imgUrl={props.background}>
+                    <TitleHeader>
+                        <TitleH1>{props.title} </TitleH1>
+                        <p>Flamingo > {props.title}</p>
+                    </TitleHeader>
+                </HaderContainerConcept>
+            </ContainerImage>
             {props.children}
         </ParentContainerConcept>
     )

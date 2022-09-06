@@ -56,7 +56,7 @@ const Navbar = ({handleFormScroll, handleOpenForm, pathname}) => {
                         <NavbarLink to="/">Acasă</NavbarLink>
                         <DropButton
                             title="Flamingo"
-                            list={["Concept", "Proiectare", "Facilităti"]}
+                            list={["Concept", "Proiectare", "Facilitati"]}
                         />
                         <NavbarLink to="/Galerie">Galerie</NavbarLink>
                         <DropButton title="Echipă" list={["FigranSRL", "Parteneri"]}/>

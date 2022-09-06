@@ -9,6 +9,7 @@ import BadURL from "./Main/Pages/Home/Components/BadURL/BadURL";
 import Galerie from "./Main/Pages/Home/Components/Galerie/Galerie";
 import FigranSRL from "./Main/Pages/Home/Components/FigranSRL/FigranSRL";
 import Parteneri from "./Main/Pages/Home/Components/Parteneri/Parteneri";
+import Facilitati from "./Main/Pages/Home/Components/Facilitati/Facilitati";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     <Route path="Galerie" element={<Galerie/>}/>
                     <Route path="FigranSRL" element={<FigranSRL/>}/>
                     <Route path="Parteneri" element={<Parteneri/>}/>
+                    <Route path="Facilitati" element={<Facilitati/>}/>
                     <Route path="Apartments/:floor/:apartment" element={<ApartmentView/>}/>
                 </Route>
                 <Route
