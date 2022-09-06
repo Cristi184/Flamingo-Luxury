@@ -25,10 +25,10 @@ function App() {
                     <Route path="Facilitati" element={<Facilitati/>}/>
                     <Route path="Apartments/:floor/:apartment" element={<ApartmentView/>}/>
                 </Route>
-                <Route
-                    path="*"
-                    element={<BadURL/>}
-                />
+                {/*<Route*/}
+                {/*    path="*"*/}
+                {/*    element={<BadURL/>}*/}
+                {/*/>*/}
             </Routes>
         </BrowserRouter>
     );
