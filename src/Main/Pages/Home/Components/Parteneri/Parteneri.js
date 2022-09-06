@@ -1,4 +1,4 @@
-import Background from "../FigranSRL/Assets/background.jpg";
+import Background from "./Assets/background.jpg";
 import RouteComponents from "../HeaderComponents/RouteComponents";
 import {
     ContainerDiv,

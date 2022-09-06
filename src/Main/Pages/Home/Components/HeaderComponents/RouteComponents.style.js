@@ -8,23 +8,36 @@ export const ParentContainerConcept = styled.div`
 `
 
 export const HaderContainerConcept = styled.div`
-  height: 220px;
+  height: 100%;
   width: 100%;
   background-image: ${(props) => `url(${props.imgUrl})`};
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 `
-export const TitleHeader = styled.h1`
-color: white;
+export const ContainerImage = styled.div`
+  height: 400px;
+  width: 100%;
+`
+
+export const TitleHeader = styled.div`
+  color: white;
   text-align: center;
+  position: relative;
 `
-
-export const ParagraphHeader = styled.p`
-color: white;
-  text-align: center;
-
+export const TitleH1 = styled.h1`
+  color: white;
 `
-

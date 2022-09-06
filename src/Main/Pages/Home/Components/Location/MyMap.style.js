@@ -21,29 +21,29 @@ export const HeaderTextMyMap = styled.h1`
   text-align: center;
   padding-top: 5%;
   margin-bottom: 80px;
-  color:#584e3f;
+  color:BEIGE;
   text-transform: uppercase;
 
 
   @media (max-width: 900px) {
     margin-bottom: 50px !important;
     text-align: left;
-
   }
   
   
 `
 
 export const SubHeaderText = styled.h2`
-  color: #584e3f;
+  color: BEIGE;
   text-transform: uppercase;
 `
 
 export const ParagraphText = styled.p`
-  color:white;
+
+  color:BEIGE;
   font-size: 20px;
 `
 
 export const SpanText = styled.span`
-color:rgb(88, 78, 63);
+  color:white;
 `

@@ -15,16 +15,17 @@ function GetIcon(_iconSize) {
 
 
 const Location = () => {
-    const position = [45.440319, 28.037552]
+    const position = [45.43879810969377, 28.034685905884803]
     return (<ContainerMyMap >
-            <HeaderTextMyMap>VREI SĂ DESCOPERI adipisicing elit?
+            <HeaderTextMyMap>VREI SĂ DESCOPERI PROIECTUL FLAMINGO?
             </HeaderTextMyMap>
             <Grid container spacing={3}>
                 <Grid item xs={12} md={4}>
                     <TextContainer>
-                        <ParagraphText>Contactează-ne la adresa de email de mai jos pentru a afla mai multe despre noi.</ParagraphText>
+                        <ParagraphText>Contactează-ne la adresa de email/număr de telefon de mai jos pentru a afla mai multe despre noi.</ParagraphText>
+                        <ParagraphText>Adresa: <SpanText>Strada Crizantemelor nr.5</SpanText></ParagraphText>
                         <ParagraphText>Email: <SpanText>email@email.com</SpanText></ParagraphText>
-                        <ParagraphText>Numar de telefon: <SpanText>075765649</SpanText></ParagraphText>
+                        <ParagraphText>Număr de telefon: <SpanText>075765649</SpanText></ParagraphText>
                     </TextContainer>
                 </Grid>
                 <Grid item xs={12} md={8} style = {{height: 500}}>
@@ -32,7 +33,7 @@ const Location = () => {
                         LOCAȚIA PROIECTULUI</SubHeaderText>
                     <LeafletMap className="map"
                                 center={position}
-                                zoom={18}
+                                zoom={16}
                                 style={{  width: "100%", zIndex:"1"
                                 }}
                     >
