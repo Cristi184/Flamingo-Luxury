@@ -58,6 +58,8 @@ export const StoryTextSecundarDiv = styled.div`
 export const StoryPicturePrincipalDiv = styled.div`
   width: 50%;
   height: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 
 
   @media (max-width: 700px) {
@@ -96,7 +98,7 @@ export const StoryParagraph = styled.p`
   &:after {
     display: block;
     content: '';
-    border-bottom: solid 10px #d5a076;
+    border-bottom: solid 10px #842e1b;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
     transform-origin: 100% 50%;

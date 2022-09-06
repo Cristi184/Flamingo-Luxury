@@ -2,7 +2,7 @@ import RouteComponents from "../HeaderComponents/RouteComponents";
 import {
     ContainerProiectare,
 } from "./Facilitati.style";
-import Background from "../Proiectare/Assets/background.jpg";
+import Background from "./Assets/background.jpg";
 import Img2 from "../Proiectare/Assets/img2.jpg"
 import Img1 from "../Proiectare/Assets/img1.jpg"
 import Img3 from "../Proiectare/Assets/img3.jpg"
