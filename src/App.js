@@ -15,15 +15,15 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home/>}>
-                    <Route path="Apartments/:floor" element={<FloorView/>}/>
-                    <Route path="Concept" element={<Concept/>}/>
-                    <Route path="Proiectare" element={<Proiectare/>}/>
-                    <Route path="Galerie" element={<Galerie/>}/>
-                    <Route path="FigranSRL" element={<FigranSRL/>}/>
-                    <Route path="Parteneri" element={<Parteneri/>}/>
-                    <Route path="Facilitati" element={<Facilitati/>}/>
-                    <Route path="Apartments/:floor/:apartment" element={<ApartmentView/>}/>
+                <Route path="/" element={<Home/>} exact>
+                    <Route path="Apartments/:floor" element={<FloorView/>} exact/>
+                    <Route path="Concept" element={<Concept/>} exact/>
+                    <Route path="Proiectare" element={<Proiectare/>} exact/>
+                    <Route path="Galerie" element={<Galerie/>} exact/>
+                    <Route path="FigranSRL" element={<FigranSRL/>} exact/>
+                    <Route path="Parteneri" element={<Parteneri/>} exact/>
+                    <Route path="Facilitati" element={<Facilitati/>} exact/>
+                    <Route path="Apartments/:floor/:apartment" element={<ApartmentView/>} exact/>
                 </Route>
                 <Route
                     path="*"
