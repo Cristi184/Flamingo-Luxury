@@ -21,7 +21,6 @@ const BadURL = () => {
                     <IconButton color="primary" component="label" onClick={handleRedirect}>
                         <Home/>
                     </IconButton>
-
                 }
             />
 
