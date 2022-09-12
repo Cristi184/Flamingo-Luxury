@@ -157,9 +157,18 @@ export const StyledScroll = styled.div`
     right: 4px;
   }
 `;
+
+export const StyledSelectInformation = styled.div`
+  display: flex;
+  width: 50%;
+  justify-content: center;
+`
 export const StyledSelectContainer = styled.div`
   display: flex;
   width: 100%;
+  @media (max-width: 768px) {
+   flex-direction: column;
+  }
   justify-content: center;
 
   path {

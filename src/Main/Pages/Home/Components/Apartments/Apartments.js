@@ -1,4 +1,4 @@
-import {StyledSelectContainer, StyledSVG} from "../UI/Styled";
+import {StyledFooterTitle, StyledSelectContainer, StyledSelectInformation, StyledSVG} from "../UI/Styled";
 import appSelection from "../../../../../img/apSelection.jpg";
 import {useNavigate} from "react-router-dom";
 
@@ -13,7 +13,8 @@ const Apartments = () => {
     return (
         <>
             <StyledSelectContainer>
-                <StyledSVG width="35%">
+                <StyledSelectInformation><StyledFooterTitle>Alege un Etaj</StyledFooterTitle></StyledSelectInformation>
+                <StyledSVG width="calc(100vh - 250px);">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4878.43 6125.67"
                          onClick={handleSelect}>
                         <image href={appSelection}/>
